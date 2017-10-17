@@ -2,26 +2,27 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Layout } from './Layout';
 import { IndexPage } from './IndexPage';
-import { AthletePage } from './AthletePage';
+import { PersonProfile } from './PersonProfile';
 import { NotFoundPage } from './NotFoundPage';
-import athletes from '../data/athletes';
+import vincoorbians from '../data/vincoorbians';
 
-const renderIndex = () => <IndexPage athletes={athletes} />;
-const renderAthlete = ({ match, staticContext }) => {
+const renderIndex = () => <IndexPage persons={vincoorbians} />;
+
+const renderProfile = ({ match, staticContext }) => {
   const id = match.params.id;
-  const athlete = athletes.find(current => current.id === id);
-  if (!athlete) {
+  const vincoorbian = vincoorbians.find(current => current.id === id);
+  if (!vincoorbian) {
     return <NotFoundPage staticContext={staticContext} />;
   }
 
-  return <AthletePage athlete={athlete} athletes={athletes} />;
+  return <PersonProfile person={vincoorbian} persons={vincoorbians} />;
 };
 
 export const App = () => (
   <Layout>
     <Switch>
       <Route exact path="/" render={renderIndex} />
-      <Route exact path="/athlete/:id" render={renderAthlete} />
+      <Route exact path="/vincoorbian/:id" render={renderProfile} />
       <Route component={NotFoundPage} />
     </Switch>
   </Layout>

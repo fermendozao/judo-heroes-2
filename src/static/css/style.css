@@ -249,3 +249,401 @@ nav.atheletes-menu a.active {
 #abar a:hover {
   text-decoration: underline;
 }
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*
+  ================================================
+  General
+  ================================================
+*/
+
+body{
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+  ================================================
+  user-card
+  ================================================
+*/
+
+.user-card {
+  background: #fff;
+  width: 296px;
+  height: auto;
+  box-shadow: 3px 8px 23px 3px rgba(115, 113, 113, 0.36);
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  margin: 45px 20px 30px 0;
+  display: inline-block;
+  border-radius: 5px;
+  border-bottom: solid 30px rgb(0,25,69);
+}
+
+.user-card:hover {
+  cursor: pointer;
+}
+
+/*
+  ===================================
+  image
+  ===================================
+*/
+/*grayscale efect*/
+
+.image {
+  transition: all .4s ease;
+  filter: grayscale(1);
+  max-width: 200px;
+  height: auto;
+}
+
+.image:hover {
+  filter: grayscale(0);
+}
+.borderimage{
+  margin: 42px auto;
+  border: 7px solid #3b064c;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+/*
+  ===================================
+  text information
+  ===================================
+*/
+
+/*worker info: name job*/
+.user-card > .usertitle {
+  padding: 9px 0;
+  border-bottom: 1px solid #333;
+}
+/*worker name*/
+.usertitle > .name{
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: #333;
+}
+/*job title*/
+.usertitle > .jobtitle{
+  font-size: 1em;
+  color: #444;
+  margin: 15px 0 12px 0;
+
+}
+
+/*
+  ===================================
+  font awesome
+  ===================================
+*/
+/*contact info: twitter, github, email*/
+.contact-info > .socialnetwork:hover{
+  color: #000;
+}
+
+.contact-info > .socialnetwork {
+  color: #777;
+  margin: 25px;
+  display: inline-block;
+}
+/*
+  ===================================
+  Header
+  ===================================
+*/
+.main-header{
+  background-color: #262e31;
+  height: 60px;
+}
+
+.main-header-search{
+  background-color: #262e31;
+  height: 90px;
+  -webkit-box-shadow: 0px 9px 65px -17px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 9px 65px -17px rgba(0,0,0,0.5);
+  box-shadow: 0px 9px 65px -17px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+#logotipo{
+  padding: 14px;
+  order: 1;
+  margin: auto 30px;
+}
+
+/*
+  ===============================================
+  filter-component
+  ===============================================
+*/
+
+.container{
+  display: flex;
+}
+
+/*
+  ========================
+  Buttons
+  ========================
+*/
+.areabutton{
+  width: 350px;
+  height: 80px;
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 0;
+  border-width: .5px;
+  color: #fff;
+  transition-duration: 0.4s;
+}
+
+.areabutton:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  position: relative;
+  top: -2px;
+}
+/*
+  Buttons colors
+*/
+.all{
+  background-color: rgb(255, 68, 37);
+}
+
+.faas{
+  background-color: rgb(0, 177, 148);
+}
+
+.sasas{
+  background-color: rgb(1, 24, 76);
+}
+
+.python{
+  background-color: rgb(0, 136, 182);
+}
+
+.php{
+  background-color: rgb(131, 103, 154);
+}
+
+.apps{
+  background-color: rgb(59, 6, 76);
+}
+
+/*
+  ===================
+  display workers
+  ===================
+*/
+.workers{
+  margin: 0 24px;
+  width: 100%;
+}
+
+/*index letter*/
+
+.index{
+  color: rgb(234, 88, 75);
+  font-size: 1.7em;
+  line-height: 25px;
+  margin-bottom: 18px;
+  margin-top: 33px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(255, 68, 37);
+}
+
+.index:first-of-type{
+  margin-top: 1px;
+}
+
+.tag{
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #3b064c;
+  border-radius: 12px;
+  margin: 20px;
+  font-size: 1.8em;
+}
+
+.lateral-info {
+  min-width: 350px;
+  -webkit-box-shadow: 8px -1px 33px 0px rgba(0,0,0,0.24);
+  -moz-box-shadow: 8px -1px 33px 0px rgba(0,0,0,0.24);
+  box-shadow: 8px -1px 33px 0px rgba(0,0,0,0.24);
+
+}
+
+.listproyects{
+  list-style-type: none;
+  font-size: 1.8em;
+  margin: 25px 20px;
+}
+.listproyects > li > i{
+  font-size: 0.3em;
+  vertical-align: middle;
+  color: rgb(234, 88, 75);
+  margin: 40px 20px 40px 0;
+}
+
+.action-field{
+  width: 280px;
+  font-size: 1em;
+  background-color: #9ba0a3;
+  color:#364042;
+  border: none;
+  vertical-align: middle;
+  padding: 5px 28px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.action{
+  order: 1;
+  margin: auto 32px;
+}
+.fa-search::before{
+  content: "\f002";
+}
+.labelimage{
+  position: relative;
+  left: 28px;
+  top: 1px;
+  color: #757575;
+}
+/*
+  ===================
+  helpers
+  ===================
+*/
+
+._width350 {
+  max-width: 350px;
+}
+._centertext {
+  text-align: center;
+}
+._roundimage{
+  border-radius: 50%;
+  width: 100%;
+}
+
+._margintop40 {
+  margin-top: 40px;
+}
+._marginbottom30 {
+  margin-bottom: 30px;
+}
+._font15em{
+  font-size: 1.5em !important;
+}

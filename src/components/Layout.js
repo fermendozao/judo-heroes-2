@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 
 export const Layout = props => (
   <div className="app-container">
-    <header>
-      <Link to="/">
-        <img className="logo" src="/img/logo-judo-heroes.png" alt="Judo Heroes logo" />
-      </Link>
+    <header className="main-header">
+      <div className="logo">
+        <Link to="/">
+          <img
+            src="/img/logo.png"
+            width="180"
+            alt="Haz clic aquí para volver a la página de inicio"
+          />
+        </Link>
+      </div>
     </header>
     <div className="app-content">{props.children}</div>
     <footer>

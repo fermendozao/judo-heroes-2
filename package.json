@@ -21,8 +21,8 @@
     "babel-preset-react": "^6.16.0",
     "ejs": "^2.5.2",
     "express": "5.0.0-alpha.5",
-    "react": "15.4.2",
-    "react-dom": "15.4.2",
+    "react": "15.6.0",
+    "react-dom": "15.6.0",
     "react-router-dom": "^4.0.0"
   },
   "devDependencies": {
